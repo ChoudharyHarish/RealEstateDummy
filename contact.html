@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Real-Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+
+    <style>
+        #Contact {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;;
+            height: 70vh;
+        }
+
+        .box2 {
+            width: 60%;
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 70vh;
+        }
+
+        .box3 {
+            width: 60%;
+        }
+        .box3 p{
+             margin-bottom: 2rem;
+        }
+        .span{
+            background-color: rgb(17, 7, 79);
+            color: white;
+            padding: 1.5rem;
+            margin: 2rem 3.5rem;
+        }
+       .h-contact{
+           margin-left: 3.5rem;
+       }
+        .h-left{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="About-Container">
+    <header>
+        <div id="menu-bar">
+            <div id="logo">
+                <img src="images/logro-regular-free-img.png" alt="">
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="propereties.html">Properties</a>
+                <a href="agents.html">Agents</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+    <section id="About">
+        <h1 class="biggest-heading h-light h-pages">contact Us</h1>
+    </section>
+</div>
+
+    <section id="Contact">
+        <div class="box2">
+            <h3 class="smallest-heading">Need Help?</h3>
+            <h2 class="small-heading">Message Us</h2>
+
+            <form action="backend.php">
+
+                <input type="text" name="name" id="name" placeholder=" Your Name">
+                <input type="email" name="E-Mail" id="E-Mail" placeholder="Your E-Mail">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button class="btn purple">Send Message</button>
+            </form>
+        </div>
+        <div class="box3">
+            <h1 class="small-heading h-light h-contact">CONTACT INFO</h1>
+            <p class="small-para h-purple h-left h-contact"> Click edit button to change this text. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium,
+                nesciunt. Ipsa veniam ut laborum tempora corporis. Quia, illum. Facere, voluptate. </p>
+            <span class="span"> +1 910-626-85255</span>
+            <p class="small-para h-purple h-contact"> 123 Fifth Avenue, New York, NY 10160</p>
+            <span class="tag h-contact">contact@hello.com</span>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <span class="footer-tag ">Copyright © 2021 Real Estate</span>
+        <span class="footer-tag float-right">Powered by Real Estate</span>
+
+    </div>
+</body>
+
+</html>
