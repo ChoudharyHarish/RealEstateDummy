@@ -1,0 +1,240 @@
+@media only screen and (max-width:1200px){
+        header{
+            padding: 1rem  5rem;
+        }
+        
+        #logo{
+            width: 50%;
+        }
+      
+        .navbar{
+        display: none;
+        }
+    
+        #hamburger{    
+            padding: 1rem;
+            position: absolute;
+            right: 4rem;
+        }
+       .hamburger-icon{
+              display: block;
+               height: 4px;
+               width: 36px;
+               background-color: white;
+               margin: 5px 1px;            
+        }
+
+        .box{
+            display:grid;
+           grid-template-columns: repeat(2,auto);
+            grid-gap: 2rem; 
+        }
+        .box-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box img{
+            height: 300px;
+            width:100%;
+        }
+        #help img{
+            height: 100px;
+            width: 100px;
+        }
+
+        .biggest-heading{
+            font-size: 6rem;
+            letter-spacing: 2.6px;   
+        }
+        .small-heading{
+        font-size: 1.5rem ; 
+        }
+        .smallest-heading{
+        font-size: 0.9rem ;
+        }
+        .btn{
+            padding: 0.8rem;
+            font-size: 15px;
+          }
+
+          form{
+            margin: 1rem 0px;
+        }
+        input{
+            font-size: 15px;
+            padding: 0.5rem;
+            width: 260px;
+        }
+        textarea{
+            width: 260px;
+            font-size: 15px;
+            padding: 0.5rem;
+        } 
+        .big-heading{
+            font-size: 2.7rem;
+            letter-spacing: 1.4px;
+            margin: 2.2rem;
+        }
+        .footer-tag{
+            font-size: 13px; 
+        }  
+        .container{
+            display: grid;
+            grid-gap: 0rem;
+            grid-template-columns: repeat(3, auto);
+            padding: 3rem 5rem;
+       }              
+        
+}
+
+@media only screen and (max-width:1100px){
+
+     .container{
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: repeat(2, auto);
+   }   
+   #hamburger{
+        right: 1rem;
+   }
+     #box2{
+     display: none;
+     }
+     
+
+    .right-text img{
+        height: 380px;
+        width: 320px;
+    }
+
+}
+@media only screen and (max-width:780px){
+    header{
+        padding: 1rem
+    }
+
+    #Home-Container #about #samples #grid #contact #help{
+        width: 100vw;
+    }
+    #Home-Container #about #samples #grid #contact #help::before{
+        width: 100vw;
+    }
+    
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 150vh;
+    }
+    #about:before{
+        height:150vh;
+    }
+    .left-text{
+        width:90%;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-logo{
+        flex-direction: column;
+    }
+    .biggest-heading{
+        font-size: 5rem;
+        letter-spacing: 2.2px;   
+    }
+    .big-heading{
+        font-size: 2.4rem;
+        letter-spacing: 1.1px;
+        margin: 2rem;
+    }
+    .footer-tag{
+        font-size: 10px; 
+    }  
+   .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+#help {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#help::before{
+    height: 150vh;
+}
+.box-logo{
+
+    padding: 1rem;
+}
+.card-logo{
+    margin: 0px;
+    padding: 5px;
+}
+.slider{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 1rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center */
+}
+}
+
+@media only screen and (max-width:500px){
+
+    body{
+        width: 100vw;
+    }
+
+    #about{
+        height: 190vh;
+    }
+    #about:before{
+        height:190vh;
+        width: 100vw;
+    }
+ 
+#help {
+    height: 190vh;
+    width: 100vw;
+}
+#help::before{
+    height: 190vh;
+    width: 100vw;
+}
+#contact{
+    width: 100vw;
+}
+    .slider{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    height: 100%;
+    width: 100vw;
+    }
+    .lower-half{
+      height: 100vh;
+    }
+    
+    .footer-tag{
+        font-size: 18px; 
+        margin:  0rem 3rem;
+        display: block;
+        width: 100%
+    }
+    .float-right{
+            float:none;
+    }
+    .biggest-heading .small-heading  .smallest-heading .big-heading{
+       width: 95%;   
+    }
+
+}
