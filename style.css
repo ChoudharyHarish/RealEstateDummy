@@ -49,7 +49,7 @@ header{
 } 
   
 #Home-Container{
-    background-color: rgb(63, 0, 140);
+    background-color: rgb(60, 1, 136);
     opacity: 0.92; 
     height: 150vh;
     display: flex;
@@ -58,13 +58,13 @@ header{
 }
 #Home-Container::before{
     position: absolute;
-    background: url(images/BG6.jpg) no-repeat center center/cover;
+    background: url(bg.jpeg) no-repeat center center/cover;
     content: '';
-    opacity: 0.4;
+    opacity: 0.3;
     z-index: -1;
     height: 150vh;
     width: 100%;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 /* Section-Home */
@@ -92,7 +92,7 @@ header{
     padding: 1.2rem;
     font-size: 18px;
     align-self:flex-start;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
     font-weight: bolder;
 }
 #box2{ 
@@ -268,18 +268,18 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 0, 140);
+    background-color: rgb(60, 1, 136);
     opacity: 0.92;
 }
 #about::before{
     position: absolute;
     content: '';
-    background: url(images/BG4.jpg) no-repeat center center/cover;
-    opacity: 0.4;
+    background: url(a4.jpeg) no-repeat center center/cover;
+    opacity: 0.3;
     z-index: -1;
     height: 100%;
     width: 100%;
-    /* background-attachment: fixed;  */
+    background-attachment: fixed; 
 }
 .left-text{
    padding: 3rem;
@@ -341,19 +341,20 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 0, 140);
+    background-color: rgb(60, 1, 136);
+    /* padding: 3rem; */
 }
 #help img{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 300px;
 }
 #help::before{
     position: absolute;
     content: '';
-    opacity: 0.4;
-    background: url(images/BG7.jpeg) no-repeat center center/cover;
+    opacity: 0.3;
+    background: url(bg.jpeg) no-repeat center center/cover;
     z-index: -1;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-attachment: fixed; 
     
@@ -378,8 +379,7 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-   
+    margin-top: 3rem;
 }
 .upper-half{
     background-color: rgb(232, 232, 232);
@@ -411,12 +411,19 @@ textarea{
     background-color: rgb(42, 5, 82);
     color: rgb(208, 208, 208);
     padding: 2rem;   
-}
+    width: 100%;
+    text-align: center;
+} 
 
-.footer-tag{
-    font-size: 18px; 
-    margin:  0rem 3rem;
+#hamburger{    
+    padding: 1rem;
+    position: absolute;
+    right: 4rem;
 }
-.float-right{
-        float: right;
+.hamburger-icon{
+    display: none;
+       height: 4px;
+       width: 36px;
+       background-color: white;
+       margin: 5px 1px;            
 }
